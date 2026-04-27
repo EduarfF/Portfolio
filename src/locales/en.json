@@ -1,0 +1,64 @@
+{
+  "home_page": {
+    "intro_section": {
+      "greeting": "Hi, I'm Eduard",
+      "position": "Frontend Developer",
+      "description": "I build modern and functional user-oriented interfaces.",
+      "cv-button": "Download CV",
+      "templates-done-text": "Projects Completed",
+      "templates-done-number": "10",
+      "experience-years-text": "Years of Experience",
+      "experience-years-number": "2"
+    },
+    "about_me_section": {
+      "about_me": "About Me",
+      "description": "Frontend Developer with expert knowledge of HTML5, CSS3, and JavaScript, specializing in responsive landing pages and high-conversion HTML email templates. I build modern, interactive user interfaces using React and TypeScript with a focus on UI/UX and pixel-perfect design. With hands-on experience in HubSpot, Mailchimp, and WordPress, I bridge the gap between marketing needs and technical execution. My background in Java and SQL (PostgreSQL/MySQL) provides a deep understanding of the full development lifecycle. I deliver clean code, meet tight deadlines, and am fluent in English.",
+      "stats": {
+        "location_label": "Location",
+        "location_value": "Kharkiv, Ukraine",
+        "status_label": "Status",
+        "status_value": "Open to opportunities",
+        "english_label": "English Level",
+        "english_value": "B2 — Upper-Intermediate",
+        "solving_label": "Problem Solving",
+        "solving_value": "450 Codewars / 320 Leetcode"
+      }
+    },
+    "stack_section": {
+      "title": "My Stack",
+      "description": "Tools and technologies I use to build awesome projects."
+    },
+    "experience_section": {
+      "title": "Experience & Education",
+      "subtitle": "My professional journey in development and the academic foundation that helps me create quality products.",
+      "web_developer": "Web Developer",
+      "web_description": "Specialized in building responsive email campaigns and landing pages from scratch based on provided designs. Ensured pixel-perfect layouts and consistent rendering across all major email clients.",
+      "web_date": "Dec 2024 — Apr 2026",
+      "unv_route": "Bachelor of Computer Science",
+      "unv_name": "National Technical University 'KhPI'",
+      "unv_description": "Focused on IT project management, software architecture, and advanced web development principles.",
+      "unv_date": "2021 — Present (5th Year)",
+      "unv_theme_1": "Computer Science",
+      "unv_theme_2": "Project Management",
+      "unv_theme_3": "Software Engineering"
+    }
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "stack": "Stack",
+    "portfolio": "Portfolio",
+    "experience": "Experience"
+  },
+  "footer": {
+    "available_text": "Available for hire",
+    "frontend_developer": "Frontend Developer",
+    "copyright": "Built with love",
+    "quote_text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "quote_author": "Martin Fowler"
+  },
+  "common": {
+    "toggle_theme": "Theme",
+    "lang": "EN"
+  }
+}
