@@ -3,44 +3,78 @@
     "intro_section": {
       "greeting": "Hi, I'm Eduard",
       "position": "Frontend Developer",
-      "description": "I build modern and functional user-oriented interfaces.",
+      "description": "I build modern, functional, and user-oriented interfaces.",
       "cv-button": "Download CV",
-      "templates-done-text": "Projects Completed",
+      "templates-done-text": "Projects completed",
       "templates-done-number": "10",
-      "experience-years-text": "Years of Experience",
+      "experience-years-text": "Years of experience",
       "experience-years-number": "2"
     },
     "about_me_section": {
       "about_me": "About Me",
-      "description": "Frontend Developer with expert knowledge of HTML5, CSS3, and JavaScript, specializing in responsive landing pages and high-conversion HTML email templates. I build modern, interactive user interfaces using React and TypeScript with a focus on UI/UX and pixel-perfect design. With hands-on experience in HubSpot, Mailchimp, and WordPress, I bridge the gap between marketing needs and technical execution. My background in Java and SQL (PostgreSQL/MySQL) provides a deep understanding of the full development lifecycle. I deliver clean code, meet tight deadlines, and am fluent in English.",
+      "description": "Frontend Developer with expert knowledge in HTML5, CSS3, and JavaScript, specializing in responsive landing pages and high-conversion HTML emails. I create modern, interactive user interfaces using React and TypeScript with a focus on UI/UX and pixel-perfect design. With hands-on experience in HubSpot, Mailchimp, and WordPress, I bridge the gap between marketing needs and technical execution. My background in Java and SQL (PostgreSQL/MySQL) provides a deep understanding of the full development lifecycle. I deliver clean code, meet tight deadlines, and am fluent in English.",
       "stats": {
         "location_label": "Location",
         "location_value": "Kharkiv, Ukraine",
         "status_label": "Status",
-        "status_value": "Open to opportunities",
-        "english_label": "English Level",
+        "status_value": "Open to work",
+        "english_label": "English level",
         "english_value": "B2 — Upper-Intermediate",
-        "solving_label": "Problem Solving",
+        "solving_label": "Problem solving",
         "solving_value": "450 Codewars / 320 Leetcode"
       }
     },
     "stack_section": {
-      "title": "My Stack",
-      "description": "Tools and technologies I use to build awesome projects."
+      "title": "My Tech Stack",
+      "description": "Tools and technologies I use to bring cool projects to life."
     },
     "experience_section": {
       "title": "Experience & Education",
-      "subtitle": "My professional journey in development and the academic foundation that helps me create quality products.",
+      "subtitle": "My professional journey in development and the academic foundation that helps me build quality products.",
       "web_developer": "Web Developer",
-      "web_description": "Specialized in building responsive email campaigns and landing pages from scratch based on provided designs. Ensured pixel-perfect layouts and consistent rendering across all major email clients.",
+      "web_description": "Specialized in creating responsive email campaigns and landing pages from scratch based on provided designs. Ensured pixel-perfect layouts and consistent rendering across all major email clients.",
       "web_date": "Dec 2024 — Apr 2026",
       "unv_route": "Bachelor of Computer Science",
       "unv_name": "National Technical University 'KhPI'",
-      "unv_description": "Focused on IT project management, software architecture, and advanced web development principles.",
-      "unv_date": "2021 — Present (5th Year)",
+      "unv_description": "Focusing on IT project management, software architecture, and advanced web development principles.",
+      "unv_date": "2021 — Present (5th year)",
       "unv_theme_1": "Computer Science",
       "unv_theme_2": "Project Management",
       "unv_theme_3": "Software Engineering"
+    },
+    "portfolio_section": {
+      "title": "Portfolio",
+      "subtitle": "A selection of recent works",
+      "tech": "Technologies",
+      "projects": {
+        "landing_wp": {
+          "description": "Developed and deployed a WordPress landing page. Fully configured the admin panel to allow the client to manage content and images. Integrated feedback form plugins."
+        },
+        "landing_hb": {
+          "description": "Created a HubSpot page. Set up content editing via standard modules and integrated HubSpot forms for CRM lead generation."
+        },
+        "landing_shopify": {
+          "description": "Worked on Shopify store page layouts. Customized theme sections to enable the owner to edit content through the native Shopify editor."
+        },
+        "landing_gh": {
+          "description": "Developed and configured a HubSpot landing page. Exposed core blocks to the admin panel for easy editing and integrated platform forms."
+        },
+        "email_hb": {
+          "description": "Coded a HubSpot email template. Achieved Pixel Perfect precision. Tested rendering on Android, iOS, Gmail, Outlook, and Samsung Mail."
+        },
+        "email_klaviyo": {
+          "description": "Developed a Klaviyo template. Verified responsiveness across mobile, tablet, and desktop. Tested in iOS, Android, and Gmail email clients."
+        },
+        "email_customer": {
+          "description": "Created a responsive email for Customer.io. Tested across multiple devices and major email service providers."
+        },
+        "email_mailchimp": {
+          "description": "Mailchimp email template. Executed Pixel Perfect coding. Ensured stability in Outlook, Gmail, and Apple Mail."
+        },
+        "email_active": {
+          "description": "Developed and verified an Active Campaign email. Tested display on desktop, tablet, and mobile devices (Samsung, iPhone)."
+        }
+      }
     }
   },
   "header": {
@@ -51,7 +85,7 @@
     "experience": "Experience"
   },
   "footer": {
-    "available_text": "Available for hire",
+    "available_text": "Open to offers",
     "frontend_developer": "Frontend Developer",
     "copyright": "Built with love",
     "quote_text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
