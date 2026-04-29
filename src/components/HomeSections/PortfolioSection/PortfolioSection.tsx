@@ -6,11 +6,11 @@ interface BaseProject {
   category: "landings" | "emails" | "pet";
   image: string;
   stack: string[];
+  description?: string;
 }
 
 interface LegacyProject extends BaseProject {
   category: "landings" | "emails";
-  description: string;
 }
 
 interface PetProject extends BaseProject {
@@ -273,7 +273,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ id }) => {
                       </div>
 
                       <p className="text-sm leading-relaxed text-slate-300 mb-6 grow overflow-y-auto">
-                        {t(project.description)}
+                        {project.description ? t(project.description) : ""}
                       </p>
 
                       <div className="mt-auto pt-6 border-t border-white/10">

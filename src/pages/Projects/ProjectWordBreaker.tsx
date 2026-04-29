@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Code2, Sparkles, Monitor } from "lucide-react";
 
 const ProjectWordBreaker = () => {
-  const [currentTheme, setCurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">("light");
   const { t } = useTranslation();
 
   useEffect(() => {
