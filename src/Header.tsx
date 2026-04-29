@@ -4,16 +4,19 @@ import { useTheme } from "./ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { FaTelegramPlane, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const { isDark, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const changeLanguage = (lng: string) => i18n.changeLanguage(lng);
 
   const navItems = [
-    { name: t("header.home"), href: "home" },
+    { name: t("header.home"), href: "/" },
     { name: t("header.about"), href: "about" },
     { name: t("header.experience"), href: "experience" },
     { name: t("header.stack"), href: "stack" },
@@ -24,15 +27,37 @@ const Header = () => {
     <header className="fixed top-6 left-0 w-full px-6 z-50">
       <div className="max-w-7xl mx-auto bg-white flex justify-end lg:justify-between items-center dark:bg-black dark:border-gray-800 px-3 lg:px-10 py-3 rounded-2xl shadow-xl transition-all duration-300">
         <nav className="hidden lg:flex md:w-sm lg:w-2xl justify-between gap-1 bg-gray-50 dark:bg-gray-900 lg:px-10 py-1 rounded-xl">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={`#${item.href}`}
-              className="px-4 py-2 text-md font-medium text-gray-600 dark:text-gray-300 hover:text-yellow-500 rounded-lg transition-all"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            if (item.href === "/") {
+              return (
+                <Link
+                  key={item.href}
+                  to="/"
+                  className="px-4 py-2 text-md font-medium text-gray-600 dark:text-gray-300 hover:text-yellow-500 rounded-lg transition-all"
+                >
+                  {item.name}
+                </Link>
+              );
+            }
+
+            return isHomePage ? (
+              <a
+                key={item.href}
+                href={`#${item.href}`}
+                className="px-4 py-2 text-md font-medium text-gray-600 dark:text-gray-300 hover:text-yellow-500 rounded-lg transition-all"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={item.href}
+                to={`/#${item.href}`}
+                className="px-4 py-2 text-md font-medium text-gray-600 dark:text-gray-300 hover:text-yellow-500 rounded-lg transition-all"
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2">
