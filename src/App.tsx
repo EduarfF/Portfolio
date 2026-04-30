@@ -7,6 +7,7 @@ import HomePage from "./pages/Home/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToAnchor from "./ScrollToAnchor";
 import ProjectWordBreaker from "./pages/Projects/ProjectWordBreaker";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/projects/wordbreaker" element={<ProjectWordBreaker />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

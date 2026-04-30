@@ -83,6 +83,12 @@
     "subtitle": "Project",
     "description": "This project demonstrates an interactive interface for low-level text data manipulation. The core concept involves transforming static text strings into a set of independent objects that users can interact with in a free-form space."
   },
+  "not_found_page": {
+    "title": "Page not found",
+    "back_button": "Back to home page",
+    "error": "Error 404",
+    "description": "Sorry, we couldn't find what you were looking for. Maybe the link is outdated or there's an error in the address. But don't worry, the way back is open!"
+  },
   "header": {
     "home": "Home",
     "about": "About",
