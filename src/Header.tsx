@@ -108,16 +108,40 @@ const Header = () => {
       {isMenuOpen && (
         <div className="lg:hidden absolute top-20 left-6 right-6 p-4 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl transition-all animate-in fade-in slide-in-from-top-2">
           <nav className="flex flex-col gap-2">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={`#${item.href}`}
-                onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-base font-semibold text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl transition-all"
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              if (item.href === "/") {
+                return (
+                  <Link
+                    key={item.href}
+                    to="/"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="px-4 py-3 text-base font-semibold text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl transition-all"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              }
+
+              return isHomePage ? (
+                <a
+                  key={item.href}
+                  href={`#${item.href}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-base font-semibold text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl transition-all"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  to={`/#${item.href}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-base font-semibold text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl transition-all"
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </nav>
           <div className="min-[500px]:hidden flex justify-center mt-3 pt-3 gap-5 pr-2 border-t border-gray-200 dark:border-gray-800">
             <SocialLink

@@ -7,18 +7,14 @@ function NotFound() {
   return (
     <section className="w-full bg-slate-50 dark:bg-slate-900 pt-10 pb-10 lg:pt-20 lg:pb-0 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div className="order-2 md:order-1">
-           
-
             <h3 className="font-extrabold tracking-tighter mb-5 text-slate-950 dark:text-white leading-tight">
               {t("not_found_page.title")}
             </h3>
-
             <p className="text-sm md:text-lg mb-8 text-slate-600 dark:text-slate-400">
               {t("not_found_page.description")}
             </p>
-
             <div>
               <Link
                 to="/"
@@ -28,7 +24,6 @@ function NotFound() {
               </Link>
             </div>
           </div>
-
           <div className="order-1 md:order-2">
             <div className="relative flex items-center justify-center">
               <div className="relative">
