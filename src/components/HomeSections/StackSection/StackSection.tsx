@@ -11,7 +11,7 @@ import {
   FaGithub,
   FaFigma,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiPostgresql } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiPostgresql, SiHubspot } from "react-icons/si";
 
 const techStack = [
   {
@@ -83,6 +83,12 @@ const techStack = [
     size: "col-span-2 row-span-1",
     color: "#E34F26",
     desc: "Foundations",
+  },
+  {
+    name: "HubSpot",
+    icon: <SiHubspot />,
+    size: "col-span-1 row-span-1",
+    color: "#FF7A59",
   },
 ];
 
